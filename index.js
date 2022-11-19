@@ -11,6 +11,7 @@ const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 const snowflake = new Snowflake(1668849813331);
 const hour = 3.6e6;
+const PORT= process.env.PORT || 3030
 
 const app = express();
 const youtubeRegex = /(youtu\.be\/|youtube\.com\/(?:(?:(?:(?:watch\?v=|embed\/)|v\/)|shorts\/)|clip\/))(?<videoId>[\w-]+)/im;
